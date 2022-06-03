@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-01T11:55:18+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Protecturo Ltd.</title><subtitle>Custom software development and privacy solutions.
-</subtitle><author><name>Pavel Petkoff</name></author><entry><title type="html">Welcome</title><link href="http://localhost:4000/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2022-05-31T00:00:00+03:00</published><updated>2022-05-31T00:00:00+03:00</updated><id>http://localhost:4000/Welcome</id><content type="html" xml:base="http://localhost:4000/welcome.html">&lt;p&gt;Welcome to Protecturo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://protecturo.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://protecturo.com/" rel="alternate" type="text/html" /><updated>2022-06-03T06:51:09+03:00</updated><id>https://protecturo.com/feed.xml</id><title type="html">Protecturo Ltd.</title><subtitle>Custom software development and privacy solutions for governments and institutions.
+</subtitle><author><name>Pavel Petkoff</name></author><entry><title type="html">Basics Of Encryption</title><link href="https://protecturo.com/basics-of-encryption.html" rel="alternate" type="text/html" title="Basics Of Encryption" /><published>2022-06-02T00:00:00+03:00</published><updated>2022-06-02T00:00:00+03:00</updated><id>https://protecturo.com/Basics-of-Encryption</id><content type="html" xml:base="https://protecturo.com/basics-of-encryption.html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Healthcare and health IT professionals are entrusted with protecting the privacy and confidentiality of patient data. To provide this protection, these professionals frequently look to commonly accepted technologies and methodologies to safeguard the data while at rest and in transit. One technology capable of providing this type of protection is encryption.&lt;/p&gt;
+
+&lt;p&gt;The HIPAA security rule has long identified encryption (an addressable implementation specification) as a mechanism to safeguard electronic protected health information. More recently, the standards and certification criteria for electronic health records (EHR) specified that EHRs must be able to encrypt and decrypt health information in order to qualify for stage 1 of the meaningful use incentive program.&lt;/p&gt;
+
+&lt;p&gt;Similarly, guidance accompanying the breach notification interim final rule identified encryption as one technology that can render protected health information “unusable, unreadable, or indecipherable to unauthorized individuals.” Protected health information that is encrypted in accordance with this guidance is not subject to breach notification requirements under the interim final rule. The guidance discusses encryption as a mechanism to protect data in transit and at rest.&lt;/p&gt;
+
+&lt;p&gt;Implementing and managing an encryption solution requires an understanding of basic encryption processes, an awareness of the security properties provided by encryption, and knowledge of important requirements for effective encryption.&lt;/p&gt;
+
+&lt;h1 id=&quot;encryption-basics&quot;&gt;Encryption Basics&lt;/h1&gt;
+
+&lt;p&gt;Encryption is a security control used primarily to provide confidentiality protection for data. It is a mathematical transformation to scramble data requiring protection (plaintext) into a form not easily understood by unauthorized people or machines (ciphertext). After being transformed into ciphertext, the plaintext appears random and does not reveal anything about the content of the original data. Once encrypted, no person (or machine) can discern anything about the content of the original data by reading the encrypted form of the data.&lt;/p&gt;
+
+&lt;p&gt;Encryption is a reversible transformation. It is useful only when encrypted data (ciphertext) can be reversed back to its original, unencrypted form (plaintext). If not reversible, the encrypted data are considered unreadable and unusable.&lt;/p&gt;
+
+&lt;p&gt;This reversal process is referred to as decryption. An encryption process has a corresponding decryption process, which is used to reverse the encrypted data (ciphertext) back to its original content (plaintext).&lt;/p&gt;
+
+&lt;p&gt;Each encryption and decryption function requires a cryptographic key. A cryptographic key is a string of binary digits used as an input to encryption and decryption functions.&lt;/p&gt;
+
+&lt;p&gt;In order for the encryption function to transform the plaintext into ciphertext and for the decryption function to reverse the ciphertext back to its original form, the encryption and decryption functions must use the same cryptographic key. This is referred to as a symmetric key. The encryption functions specified in the Advanced Encryption Standard are widely supported in current systems and software.&lt;/p&gt;
+
+&lt;p&gt;As depicted in the figure at right, the encryption function requires two inputs, plaintext and a cryptographic key, in order to output ciphertext.&lt;/p&gt;
+
+&lt;h1 id=&quot;encryption-in-widely-used-computer-applications&quot;&gt;Encryption in Widely Used Computer Applications&lt;/h1&gt;
+
+&lt;p&gt;Encryption is widely used in many computer applications to protect data in transit and at rest. User involvement in the encryption process may vary for each application. For example, in some applications of secure Web browsing using Secure Socket Layer (SSL) or Transport Layer Security (TLS) protocols, the use of encryption may be transparent to users. In other implementations, users may be required to enter a password to encrypt or decrypt the protected data if the cryptographic key is derived from the password.&lt;/p&gt;
+
+&lt;p&gt;E-mail can be encrypted by the sender and then decrypted by the intended recipient using Secure/Multipurpose Internet Mail Extensions (S/MIME). E-mail can be read only by the sender and the intended recipient.&lt;/p&gt;
+
+&lt;p&gt;Internet Protocol Security (IPsec) is a suite of network layer security protocols frequently used to establish virtual private networks. They enable only the two ends of a communication in a computer network to understand the encrypted messages exchanged between them.&lt;/p&gt;
+
+&lt;p&gt;The SSL protocol and its successor, TLS, are the primary end-to-end security protocols used to protect information traversing the Internet. The most common usage scenario for these protocols is a Web browser, acting as a client for the human user, interacting with a Web server. Using SSL and TLS, encrypted messages between a Web browser and a Web server cannot be decrypted by any unauthorized party.&lt;/p&gt;
+
+&lt;p&gt;In addition to protecting data being transmitted over computer networks, encryption is also used to protect data at rest, such as data stored on hard drives, USB drives, and other end-user storage devices. For example, when an encrypted hard drive is stolen or in an unauthorized user’s possession, the encrypted data on the hard drive are useless to the unauthorized user because the unauthorized user cannot reproduce the plaintext from the hard drive without the cryptographic key.&lt;/p&gt;
+
+&lt;h1 id=&quot;requirements-for-implementing-encryption&quot;&gt;Requirements for Implementing Encryption&lt;/h1&gt;
+
+&lt;p&gt;Encryption is an important security control to provide confidentiality protection for data. For encryption to be effective and to provide data confidentiality, it is important for the following requirements to be met.&lt;/p&gt;
+
+&lt;h2 id=&quot;keep-the-cryptographic-key-secret&quot;&gt;Keep the cryptographic key secret.&lt;/h2&gt;
+
+&lt;p&gt;Encryption algorithms are made public to allow for interoperability, ease of use, and more open and effective analysis. The security of the encryption depends on the secrecy of the cryptographic key. The cryptographic key must be kept secret from all entities who are not allowed to see the plaintext. Any person or machine that knows the cryptographic key can use the decryption function to decrypt the ciphertext, exposing the plaintext. If a strong cryptographic key is generated but is not kept secret, then the data are no longer protected. Keeping the cryptographic key secret ensures confidentiality protection of the protected data.&lt;/p&gt;
+
+&lt;h2 id=&quot;protect-the-cryptographic-key-from-modification&quot;&gt;Protect the cryptographic key from modification.&lt;/h2&gt;
+&lt;p&gt;The cryptographic key must always be protected from modification. For the ciphertext to be transformed to plaintext, the decryption function must use the same cryptographic key used by the encryption function to decrypt the ciphertext. If the cryptographic key is modified, the plaintext cannot be reproduced. When this happens, the plaintext (the protected data) is lost. It is very important to protect the cryptographic key from any modification (including being lost).&lt;/p&gt;
+
+&lt;p&gt;Like other files, cryptographic keys could be intentionally or unintentionally modified. For example, cryptographic keys could be unintentionally corrupted during transmission if an application or protocol using the cryptographic key does not operate as expected. A malicious user with access to the cryptographic key could intentionally modify the cryptographic key to prevent access to encrypted data. In either situation, plaintext data cannot be reproduced by the modified cryptographic key.&lt;/p&gt;
+
+&lt;p&gt;Therefore, any system using encryption should have a key recovery mechanism to recover the cryptographic key if it is lost or modified. An example of such a recovery mechanism is to make multiple copies of the cryptographic key, and store them separate from each other in locations unknown to unauthorized parties. If the original key is modified or lost, a recovery copy can be used.&lt;/p&gt;
+
+&lt;h2 id=&quot;know-the-importance-of-cryptographic-key-length-in-choosing-an-encryption-algorithm&quot;&gt;Know the importance of cryptographic key length in choosing an encryption algorithm.&lt;/h2&gt;
+&lt;p&gt;To decrypt the ciphertext, an attacker must search for the cryptographic key by decrypting the ciphertext with all possible keys until the correct key is found. For example, if the cryptographic key is two bits long, there are four possible keys that the attacker may try (00, 01, 10, 11). The longer the key, the more possible keys the attacker must try.&lt;/p&gt;
+
+&lt;p&gt;Generally speaking, an encryption algorithm that uses a longer key provides a greater level of confidentiality protection. For example, the Advanced Encryption Standard using a 192-bit key (AES-192) provides stronger protection than the Advanced Encryption Standard using a 128-bit key (AES-128) because there are more possible values for a 192-bit key than for a 128-bit key.&lt;/p&gt;
+
+&lt;h2 id=&quot;generate-a-strong-cryptographic-key-and-transport-it-securely&quot;&gt;Generate a strong cryptographic key and transport it securely.&lt;/h2&gt;
+&lt;p&gt;If an attacker can get information about certain bits of the key, then the encryption function using this key does not provide the necessary level of protection. For example, if the key is two bits and the attacker knows that the first bit of the key is equal to the second bit, then the attacker needs to try only two possible keys, 00 and 11, instead of four combinations.&lt;/p&gt;
+
+&lt;p&gt;Ideally, a cryptographic key is a randomly generated string of bits that provides the attacker with no information about any bits of the key. Keys can be generated using a Deterministic Random Bit Generator, a function used to generate high-quality random bits for an encryption key. The National Institute of Standards and Technology’s “Recommendation for Random Number Generation Using Deterministic Random Bit Generators” recommends NIST-approved mechanisms for the generation of random bits using deterministic methods.&lt;/p&gt;
+
+&lt;p&gt;Cryptographic keys can be generated solely by the encrypting entity, or through cooperation between the encrypting and decrypting entities, depending on the usage scenario. NIST’s “Recommendation for Key Management-Part 1” discusses approved cryptographic key generation methods when the key is generated solely by the encrypting party.&lt;/p&gt;
+
+&lt;p&gt;In many secure communication protocols (e.g., TLS), the cryptographic key may be generated through cooperation of the encrypting and decrypting entities. NIST’s “Recommendation for Key Management-Parts 1 and 2” provide guidelines on these key agreement schemes.&lt;/p&gt;
+
+&lt;p&gt;In an application where the encrypting entity needs to share the key with a separate decrypting entity, the key must be transported to the decrypting entity in a secure manner. This transportation can be done physically using an electronic device such as a USB drive that holds the cryptographic key. It can also be done electronically over a computer network. NIST’s “Recommendation for Key Management-Parts 1 and 2” provide guidelines on methods of secure key transport.&lt;/p&gt;
+
+&lt;h2 id=&quot;encrypt-all-copies-of-the-data&quot;&gt;Encrypt all copies of the data.&lt;/h2&gt;
+&lt;p&gt;All data that require confidentiality protection should be encrypted if there is a possibility that an unauthorized person could access it. Data at rest in an operational environment are frequently encrypted. However, all copies of data, including data in storage and back-up environments, should also be encrypted to provide comparable protection.&lt;/p&gt;
+
+&lt;p&gt;Transition to NIST-approved encryption functions. Over time, changes in the use of encryption may be necessary because of cryptographic attacks on encryption algorithms or the availability of more powerful computing techniques and/or devices. Data encrypted in the past using a non-NIST–approved encryption algorithm or a NIST-approved encryption algorithm that has become obsolete should be encrypted using a current NIST-approved encryption algorithm to ensure a strong level of protection for the data. NIST’s “Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths” identifies current approved algorithms and timelines for acceptable use.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Article citation:
+Stine, Kevin; Dang, Quynh. “Encryption Basics” Journal of AHIMA 82, no.5&lt;/em&gt;&lt;/p&gt;</content><author><name>Pavel Petkoff</name></author><summary type="html">Introduction</summary></entry><entry><title type="html">Welcome</title><link href="https://protecturo.com/welcome.html" rel="alternate" type="text/html" title="Welcome" /><published>2022-05-31T00:00:00+03:00</published><updated>2022-05-31T00:00:00+03:00</updated><id>https://protecturo.com/Welcome</id><content type="html" xml:base="https://protecturo.com/welcome.html">&lt;p&gt;Welcome to Protecturo.&lt;/p&gt;
 
 &lt;p&gt;Please take a look at our &lt;a href=&quot;https://protecturo.com&quot;&gt;services&lt;/a&gt; and let us know if we can help.&lt;/p&gt;</content><author><name>Pavel Petkoff</name></author><summary type="html">Welcome to Protecturo.</summary></entry></feed>

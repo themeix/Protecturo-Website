@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "no-style-please"
-  spec.version       = "0.4.7"
-  spec.authors       = ["Riccardo Graziosi"]
-  spec.email         = ["riccardo.graziosi97@gmail.com"]
+  spec.version       = "1.0.0"
+  spec.authors       = ["Pavel Petkoff"]
+  spec.email         = ["info@protecturo.com"]
 
-  spec.summary       = "A (nearly) no-CSS, fast, minimalist Jekyll theme."
-  spec.homepage      = "https://github.com/riggraz/no-style-please"
-  spec.license       = "MIT"
+  spec.summary       = "Custom software development and privacy solutions"
+  spec.homepage      = "https://protecturo.com"
+  spec.license       = "GPL3.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
