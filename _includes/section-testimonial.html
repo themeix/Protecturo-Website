@@ -1,0 +1,50 @@
+<section class="infetech-testimonial-4-area pt-120 pb-120">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-1">
+                <div class="testimonial-4-box">
+                    <div class="testimonial-small-thumb">
+                        <ul class="testimonial-thumb-list">
+
+                            {% for testimonial in site.data.site_data.home.testimonial_section.testimonials %}
+                                <li><img src="{{testimonial.profile_img | relative_url}}" alt="{{testimonial.name}}"></li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-11">
+                <div class="testimonial-slider-active-4">
+                    {% for testimonial in site.data.site_data.home.testimonial_section.testimonials %}
+                    <div class="slide-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonial-thumb-4">
+                                    <img src="{{testimonial.profile_img | relative_url}}" alt="{{testimonial.name}}">
+                                    <div class="quote-icon">
+                                        <span>“</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="testimonial-content-4">
+                                    <div class="section-title">
+                                        <span>Client Testimonials</span>
+                                        <h3 class="title">What They’re Talking?</h3>
+
+                                        <p>{{testimonial.testimonial}} </p>
+                                    </div>
+                                    <div class="clients-info">
+                                        <h4 class="title">{{testimonial.name}} <span>{{testimonial.designation}}</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

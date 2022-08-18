@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /blog
+---
+<div class="off_canvars_overlay">
+</div>
+
+{% include menu.html %}
+{% include header.html %}
+{% include breadcrumb.html %}
+
+<section class="infetech-blog-page-area pt-120 pb-90">
+    <div class="container">
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-lg-4 col-md-6">
+                {% include postcard.html %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include section-cta.html %}
+{% include footer.html %}
